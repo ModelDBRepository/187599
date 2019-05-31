@@ -1,0 +1,30 @@
+The code files "code_Fig3.ode" and "code_Fig4.ode" were used for the
+respective simulations of Fig. 3 and 7 in
+***********************************************************************
+Hübel, N. and Ullah, G., "Anions Govern Cell Volume: a Case Study of 
+Relative Astrocytic and Neuronal Swelling in Spreading Depolarization",
+PLoS ONE, 10.1371/journal.pone.0147060 (2016).
+***********************************************************************
+The code is written for XPP/XPPAUT.
+
+
+Running "code_Fig3.ode" yields the time series shown in the main parts
+of Fig. 3. Changing "par s=0" to "par s=1" in line 45 (or equivalently
+changing "s=0" to "s=1" in the parameter settings of the XPP/XPPAUT
+graphical interface) changes the volume model from "derived" to
+"exponential" (see manuscript) and yields the time series shown in the
+insets of Fig. 3. The default plot setting in line 198 shows the
+potentials. Uncommenting line 199 or 200 will show volumes and ion
+concentrations, respectively.
+In addition, by changing "par gcl_l=0.05" to "par gcl_l=0" in line 135
+(or setting the parameter "gcl_l" to zero in the parameter interface
+after opening the file with XPP/XPPAUT) will produce Fig. 4 of the
+paper.
+
+Running "code_Fig7.ode" yields the time series shown in Fig 7. The
+plot setting in lines 239 (default), 240 and 241 show the potentials
+volumes and relative volume changes. Note that the volume plot shows
+absolute volumes as the differences between the "vli_line", the
+"vle_line" and the "vlg_line".
+
+
